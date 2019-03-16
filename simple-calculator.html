@@ -13,37 +13,37 @@
 	<div id="calc-wrap">
 		<div id="calc-display">
 			<div id="no1">#1</div>
-			<input class="input-number" type="text">
+			<input id="valueOne" class="input-number" type="text">
 			
 			<div id="op"></div>
 			
 			<div id="no2">#2</div>
-			<input class="input-number" type="text">
+			<input id="valueTwo" class="input-number" type="text">
 			
 			<div id="result">0</div>
 		</div>
 
 		<div id="calc-btns">
 			<button class="clear">CLEAR</button>
-			<button class="operator plus">+</button>
+			<button onclick="inputValue()" id="plus" value="+" class="operator">+</button>
 			
-			<button class="number seven">7</button>
-			<button class="number eight">8</button>
-			<button class="number nine">9</button>
-			<button class="operator minus">-</button>
+			<button onclick="inputValue()" value="7" class="number">7</button>
+			<button onclick="inputValue()" class="number">8</button>
+			<button onclick="inputValue()" class="number">9</button>
+			<button onclick="inputValue()" id="minus" value="-" class="operator">-</button>
 			
-			<button class="number four">4</button>
-			<button class="number five">5</button>
-			<button class="number six">6</button>
-			<button class="operator divide">/</button>
+			<button onclick="inputValue()" class="number">4</button>
+			<button onclick="inputValue()" class="number">5</button>
+			<button onclick="inputValue()" class="number">6</button>
+			<button onclick="inputValue()" onclick="inputOp()" id="divide" value="/" class="operator">/</button>
 			
-			<button class="number one">1</button>
-			<button class="number two">2</button>
-			<button class="number three">3</button>
-			<button class="operator multiply">*</button>
+			<button onclick="inputValue()" class="number">1</button>
+			<button onclick="inputValue()" class="number">2</button>
+			<button onclick="inputValue()" class="number">3</button>
+			<button onclick="inputValue()" id="multiply" value="*" class="operator">*</button>
 			
-			<button class="number zero">0</button>
-			<button class="equal">CALCULATE</button>
+			<button onclick="inputValue()" class="number">0</button>
+			<button class="equal" onclick="calculate()">CALCULATE</button>
 		</div>
 	</div>
 	
