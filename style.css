@@ -14,7 +14,7 @@ h1 {
 	text-align: center;
 }
 
-#calculator .input-number {
+#calc-display .input-number {
 	background: none;
 	box-shadow: none;
 	text-align: right;
@@ -123,4 +123,4 @@ button.operator {
 
 button.operator:focus, button.operator:hover {
 	background: #3d3d3d;
-} 
+}
