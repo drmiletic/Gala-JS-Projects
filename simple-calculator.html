@@ -13,37 +13,37 @@
 	<div id="calc-wrap">
 		<div id="calc-display">
 			<div id="no1">#1</div>
-			<input id="valueOne" class="input-number" type="text">
+			<input tabindex="1" id="valueOne" class="input-number" type="text" autofocus>
 			
 			<div id="op"></div>
 			
 			<div id="no2">#2</div>
-			<input id="valueTwo" class="input-number" type="text">
+			<input tabindex="2" id="valueTwo" class="input-number" type="text">
 			
 			<div id="result">0</div>
 		</div>
 
 		<div id="calc-btns">
-			<button onclick="clearInput()" class="clear">CLEAR</button>
-			<button onclick="inputValue()" id="plus" class="operator">+</button>
+			<button tabindex="5" onclick="clearInput()" class="clear">CLEAR</button>
+			<button tabindex="3" onclick="inputValue()" value="+" id="plus" class="operator">+</button>
 			
-			<button onclick="inputValue()" class="number">7</button>
-			<button onclick="inputValue()" class="number">8</button>
-			<button onclick="inputValue()" class="number">9</button>
-			<button onclick="inputValue()" id="minus" class="operator">-</button>
+			<button tabindex="-1" onclick="inputValue()" value="7" class="number">7</button>
+			<button tabindex="-1" onclick="inputValue()" value="8" class="number">8</button>
+			<button tabindex="-1" onclick="inputValue()" value="9" class="number">9</button>
+			<button tabindex="3" onclick="inputValue()" value="-" id="minus" class="operator">-</button>
 			
-			<button onclick="inputValue()" class="number">4</button>
-			<button onclick="inputValue()" class="number">5</button>
-			<button onclick="inputValue()" class="number">6</button>
-			<button onclick="inputValue()" onclick="inputOp()" id="divide" class="operator">/</button>
+			<button tabindex="-1" onclick="inputValue()" value="4" class="number">4</button>
+			<button tabindex="-1" onclick="inputValue()" value="5" class="number">5</button>
+			<button tabindex="-1" onclick="inputValue()" value="6"  class="number">6</button>
+			<button tabindex="3" onclick="inputValue()" value="/" onclick="inputOp()" id="divide" class="operator">/</button>
 			
-			<button onclick="inputValue()" class="number">1</button>
-			<button onclick="inputValue()" class="number">2</button>
-			<button onclick="inputValue()" class="number">3</button>
-			<button onclick="inputValue()" id="multiply" class="operator">*</button>
+			<button tabindex="-1" onclick="inputValue()" value="1" class="number">1</button>
+			<button tabindex="-1" onclick="inputValue()" value="2" class="number">2</button>
+			<button tabindex="-1" onclick="inputValue()" value="3" class="number">3</button>
+			<button tabindex="3" onclick="inputValue()" value="*" id="multiply" class="operator">*</button>
 			
-			<button onclick="inputValue()" class="number">0</button>
-			<button class="equal" onclick="calculate()">CALCULATE</button>
+			<button tabindex="-1" onclick="inputValue()" value="0" class="number">0</button>
+			<button tabindex="4" class="equal" onclick="calculate()">CALCULATE</button>
 		</div>
 	</div>
 	
