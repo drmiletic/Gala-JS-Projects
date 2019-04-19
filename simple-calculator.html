@@ -7,22 +7,16 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 	<h1>Simple JS Calculator</h1>
-	
 	<div id="calc-wrap">
 		<div id="calc-display">
 			<div id="no1">#1</div>
 			<input tabindex="1" id="valueOne" class="input-number" type="text" autofocus>
-			
-			<div id="op"></div>
-			
+			<div id="op"></div>			
 			<div id="no2">#2</div>
-			<input tabindex="2" id="valueTwo" class="input-number" type="text">
-			
+			<input tabindex="2" id="valueTwo" class="input-number" type="text">			
 			<div id="result">0</div>
 		</div>
-
 		<div id="calc-btns">
 			<button tabindex="5" onclick="clearInput()" class="clear">CLEAR</button>
 			<button tabindex="3" onclick="inputValue()" value="+" id="plus" class="operator">+</button>
@@ -46,7 +40,6 @@
 			<button tabindex="4" class="equal" onclick="calculate()">CALCULATE</button>
 		</div>
 	</div>
-	
 <script src="script.js"></script>
 </body>
 </html>
