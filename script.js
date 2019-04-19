@@ -1,25 +1,30 @@
 //Javascript
+var numberOne, numberTwo, insertValue;
 
+//This function passes values into appropriate input fields
 function inputValue() {
-	var insertValue = event.target.innerHTML;
-		/* if (insertValue === [0-9]) {
-			document.input.onfocus.innerHTML += insertValue;
-		} else { */
-		document.querySelector("#op").innerHTML = insertValue;
-		//}
+	insertValue = event.target.value;
+	if (insertValue == "+" || "-" || "/" || "*"){
+			document.getElementById("op").innerHTML = insertValue;
+		} else if (0 <= insertValue <= 9) {
+				document.getElementById("valueOne").value += insertValue;
+		} else {
+			insertValue = "";
+		} 
 }
 
 function calculate() {
-	var numberOne = Number(document.querySelector("#valueOne").value);
-	var numberTwo = Number(document.querySelector("#valueTwo").value);
-	var calcOp = document.querySelector("#op").value;
+	this.blur();
 	//Replace eval with another solution
-	var result = eval(numberOne + calcOp + numberTwo);
-
+	var result = Number(document.querySelector("#valueOne").value) + calcOp + document.querySelector("#valueTwo").value;
 	// result output
 	document.querySelector("#result").innerHTML = result; 
 }
 
 function clearInput() {
-	//To clear all input fields - IDEA: something.innerHTML = ''
+	this.blur();
+	document.getElementById("valueOne").value = "";
+	document.getElementById("valueTwo").value = "";
+	document.getElementById("op").innerHTML = "";
+	document.getElementById("result").innerHTML = "0";
 }
